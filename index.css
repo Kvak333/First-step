@@ -1,0 +1,85 @@
+:root{
+    --red:rgba(243, 16, 16, 0.8);
+    --yellow:#FFCB2F;
+    --green:rgba(5, 218, 51, 0.30);
+    --brown:#FE9526;
+    --blue:#0052FF;
+}
+
+.main {
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.main_two {
+    font-size: 28px;
+    line-height: 36px;
+}
+.main_three {
+    font-size: 22px;
+    line-height: 30px;
+}
+.main_four {
+    font-size: 20px;
+    line-height: 28px;
+}
+.main_five {
+    font-size: 18px;
+    line-height: 26px;
+}
+.main_six {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+p{
+    text-decoration: underline;
+}
+.subscriber {
+    font-size: 20px;
+    line-height: 28px;
+}
+.subscriber_one {
+    font-size: 18px;
+    line-height: 26px;
+}
+.subscriber_two {
+    font-size: 16px;
+    line-height: 24px;
+}
+.subscriber_three {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+
+div{
+    margin-right: 25px;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.inner{
+    width: 100px;
+    height: 100px;
+}
+
+
+.primary {
+    background-color:var(--blue);
+}
+.secondary {
+    background-color: var(--brown);
+}
+.success {
+    background-color: var(--green);
+}
+.info {
+    background-color: var(--yellow);
+}
+.error {
+    background-color:var(--red);
+}
