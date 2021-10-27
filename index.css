@@ -4,6 +4,16 @@
     --green:rgba(5, 218, 51, 0.30);
     --brown:#FE9526;
     --blue:#0052FF;
+    --gray:#646466;
+
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 50px;
+
 }
 
 .main {
@@ -58,14 +68,19 @@ p{
 div{
     margin-right: 25px;
 }
-.wrapper {
+.wrapper1{
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .inner{
     width: 100px;
     height: 100px;
 }
+
+
+/* color squares */
 
 
 .primary {
@@ -74,12 +89,549 @@ div{
 .secondary {
     background-color: var(--brown);
 }
-.success {
+.green {
     background-color: var(--green);
 }
-.info {
+.yellow {
     background-color: var(--yellow);
 }
-.error {
+.red {
     background-color:var(--red);
 }
+
+
+
+/* gray squares */
+
+.wrapper2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.wrapper2 div{
+    background-color:var(--gray);
+    height: 100px;
+    width: 100px; 
+    margin-right: 100px;
+}
+.gray_square1{
+    box-shadow: 0px 5px 5px gray;
+}
+.gray_square2{
+    box-shadow: 0px 7px 10px gray;
+}
+.gray_square3{
+    box-shadow: 0px 10px 15px gray;
+}
+.gray_square4{
+    box-shadow: 0px -5px 5px gray;
+}
+.gray_square5{
+    box-shadow: 0px -7px 10px gray;
+}
+.gray_square6{
+    box-shadow: 0px -10px 15px gray;
+}
+
+
+/* forms */
+
+
+
+.form{
+    padding: 30px 40px;
+
+}
+.form_control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 200px;
+}
+.form_control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form_control input{
+    border:2px solid #f0f0f0;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+.form_control i {
+    position: absolute;
+    top: 33px;
+    right: 10px;    
+    visibility: hidden;
+}
+
+
+.form_control.hover input:hover{
+border-color: rgb(29, 16, 209);
+}
+.form_control.hover i.fa-eye-slash{
+color: grey;
+visibility: visible;
+}
+.form_control i.fa-eye-slash{
+color: grey;
+visibility: visible;
+}
+.form_control.focus input:focus{
+border-color: rgb(29, 16, 209);
+}
+.form_control.focus i.fa-eye-slash:focus{
+color: grey;
+visibility: visible;
+}
+.form_control.pressed input::placeholder{
+    color: black;
+border-color: rgb(29, 16, 209);
+}
+.form_control.pressed i.fa-eye-slash{
+color: black;
+visibility: visible;
+}
+.form_control.success input{
+border-color: green;
+}
+.form_control.success input::placeholder{
+color: green;
+}
+.form_control.success i.fa-eye-slash{
+color: green;
+visibility: visible;
+}
+.form_control.error input{
+border-color: red;
+    }
+.form_control.error input::placeholder{
+color: red;
+    }
+.form_control.error i.fa-eye-slash{
+color: red;
+visibility: visible;
+}
+.form_control.info input{
+border-color: yellow;
+    }
+.form_control.info input::placeholder{
+color: yellow;
+    }
+.form_control.info i.fa-eye-slash{
+color: yellow;
+visibility: visible;
+}
+.form_control.disabled i.fa-eye-slash{
+color: gray;
+visibility: visible;
+}
+
+
+
+
+
+
+/* last forms */
+
+.last div input {
+    padding: 15px 35px;
+    width: 200px;
+    height: 40px;
+}
+.form_control i.fa-user{
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    visibility: hidden;
+}
+.form_control.info i.fa-user{
+    color: yellow;
+    visibility: visible;
+    }
+.form_control.error i.fa-user{
+    color: red;
+    visibility: visible;
+    }
+.form_control.success i.fa-user{
+    color: green;
+    visibility: visible;
+    }
+.form_control.pressed i.fa-user{
+    color: black;
+    visibility: visible;
+    }
+.form_control.focus i.fa-user{
+    color: gray;
+    visibility: visible;
+    }
+.form_control.normal i.fa-user{
+    color: gray;
+    visibility: visible;
+    }
+.form_control.hover i.fa-user{
+    color: gray;
+    visibility: visible;
+    }
+.form_control.disabled i.fa-user{
+    color: gray;
+    visibility: visible;
+    }
+
+    .form_control.error label{
+        color: red;
+    }
+    .form_control.info label{
+        color: yellow;
+    }
+
+
+
+/* buttons primary*/
+
+
+
+button{
+    height: 50px;
+    width: 200px;
+    margin: 50px;
+    color: white;
+    text-align: center;
+}
+.primary1{
+    background-color: blue;
+}
+.primary2:hover{
+    background-color: blue;
+    opacity: 0.7;
+}
+.primary3:focus{
+    background-color: blue;
+    opacity: 0.6;
+}
+.primary4{
+    background-color: blue;
+    opacity: 0.4;
+}
+.primary5:disabled{
+    background-color: blue;
+    opacity: 0.2;
+}
+
+
+
+/* buttons ghost */
+
+.ghost1{
+    border: 2px solid blue;
+    opacity: 0.5;
+    color: blue;
+}
+
+.ghost2:hover{
+    border: 2px solid blue;
+    opacity: 0.5;
+    color: blue;
+}
+.ghost3:hover{
+color: blue;
+border: none;
+box-shadow: 0 5px 5px blue;
+opacity: 0.5;
+}
+.ghost4:focus{
+color: blue;
+border: none;
+box-shadow: 0 5px 5px blue;
+opacity: 0.5;
+}
+.ghost5{
+
+}
+
+
+
+
+button i {
+    margin-right: 20px;
+    }
+
+
+.primary_left_icon1{
+    background-color: blue;
+}
+.primary_left_icon2:hover{
+    background-color: blue;
+    opacity: 0.7;
+}
+.primary_left_icon3:focus{
+    background-color: blue;
+    opacity: 0.6;
+}
+.primary_left_icon4{
+    background-color: blue;
+    opacity: 0.4;
+}
+.primary_left_icon5:disabled{
+    background-color: blue;
+    opacity: 0.2;
+}
+
+
+
+
+.ghost_left_icon1{
+    border: 2px solid blue;
+    opacity: 0.5;
+    color: blue;
+}
+
+.ghost_left_icon2:hover{
+    border: 2px solid blue;
+    opacity: 0.5;
+    color: blue;
+}
+.ghost_left_icon3:hover{
+color: blue;
+border: none;
+box-shadow: 0 5px 5px blue;
+opacity: 0.5;
+}
+.ghost_left_icon4:focus{
+color: blue;
+border: none;
+box-shadow: 0 5px 5px blue;
+opacity: 0.5;
+}
+.ghost_left_icon5{
+
+}
+
+
+
+.ghost_right_icon button i{
+    margin-left: 20px;
+}
+.ghost_right_icon1{
+    border: 2px solid blue;
+    opacity: 0.5;
+    color: blue;
+}
+
+.ghost_right_icon2:hover{
+    border: 2px solid blue;
+    opacity: 0.5;
+    color: blue;
+}
+.ghost_right_icon3:hover{
+color: blue;
+border: none;
+box-shadow: 0 5px 5px blue;
+opacity: 0.5;
+}
+.ghost_right_icon4:focus{
+color: blue;
+border: none;
+box-shadow: 0 5px 5px blue;
+opacity: 0.5;
+}
+
+
+
+
+
+
+label{
+    margin-right: 25px;
+  
+}
+
+  .input_hover:hover::placeholder{
+      border: 2px solid blue;
+      overflow: hidden;
+      outline: 0;
+  }
+  .input_focus:focus{
+      border: 2px solid blue;
+  }
+  .input_success:valid{
+      border: 2px solid green;
+  }
+  .input_error:invalid{
+    border: 1px solid red;
+    color: red;
+    }
+  
+   
+
+    
+    
+    
+    
+    
+    
+    /* select */
+
+    .select{
+        position:relative;
+        margin-bottom: 100px;;
+        margin-top: 100px;
+        width: 250px;
+    }
+    .select:after{
+        content:'';
+        display:block;
+        border-style:solid;
+        border-width:6px 5px 0 5px;
+        border-color:#000 transparent transparent transparent;
+        pointer-events:none;
+
+        position:absolute;
+        top:50%;
+        right:1rem;
+        z-index:1;
+        margin-top:-3px;
+    }
+    .select select{
+
+        display: block;
+        width: 100%;
+        padding: .75rem 2.5rem .75rem 1rem;
+        background: none;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        -webkit-appearance: none;
+        appearance: none;
+
+        font-family: inherit;
+        font-size: 1rem;
+        color: #444;
+    }
+    .select select:focus{
+        outline: 0;
+        border-color: #0891e6;
+    }
+
+
+
+    
+ label{
+     margin-bottom:25px ;
+     display: block;
+     margin-right: 50px;
+ }
+    .check-boxes{
+        display: flex;
+        
+    }
+    .check_box{
+        position: absolute;
+        width: 1px;
+        height:  1px;
+        overflow:hidden;
+        clip: rect(0 0 0 0);
+        padding-left: 30px;
+    }
+    .check_style{
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        border: 2px solid #0891e6;
+        margin-left: -30px;
+        border-radius: 4px;
+    }
+    .check_box:checked + .check_style{
+        background-color: #0891e6;
+    }
+    .check_box:disabled + .check_style{
+        border: 2px solid gray;
+    }
+    
+    
+    
+    
+    .check_box_round{
+        position: absolute;
+        width: 1px;
+        height:  1px;
+        overflow:hidden;
+        clip: rect(0 0 0 0);
+        padding-left: 30px;
+    }
+    .check_style_round{
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        border: 3px solid #0891e6;
+        margin-left: -30px;
+        border-radius: 50px;
+    }
+    .check_box_round:checked + .check_style_round::before{
+        content:"";
+        width: 13px;
+        height: 13px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #0891e6;
+        border-radius: 50px;
+    }
+    .check_box_round:disabled + .check_style_round{
+        border: 2px solid gray;
+    }
+
+
+
+.center{
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    bottom: 0; */
+    transform: translate(-50%,-50%);
+    margin-top: 50px;
+    margin-left: 50px;
+}
+    .switch{
+        position: relative;
+        width: 80px;
+        height: 40px;
+        appearance: none;
+        background:wheat;
+        outline: none;
+        border-radius: 20px;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        transition: .5s;
+
+    }
+    .switch:checked{
+        background-color:wheat;
+    }
+    .switch::before{
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        top: 0;
+        left: 0;
+        background-color: rgb(204, 198, 198);
+        transform: scale(1.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: .5s;
+    }
+    .switch:checked::before{
+        left: 40px;
+        background-color: royalblue;
+
+    }
+
+
+
+
+    .form-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
